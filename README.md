@@ -1,10 +1,10 @@
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/首页1.png)
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/分享1.png)
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/导航侧滑1.png)
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/详情1.png)
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/消息1.png)
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/交易1.png)
-![image](https://github.com/wjn919/MyOpenRetrofit/blob/master/app/screenshots/侧边栏1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/首页1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/分享1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/导航侧滑1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/详情1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/消息1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/交易1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/侧边栏1.png)
 这是一个基于retrofit网络框架开发的仿照今日白菜卷的一个小demo，应用的知识点有：
    retrofit+rxjava网络框架，
    realm数据库，
