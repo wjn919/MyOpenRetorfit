@@ -1,6 +1,6 @@
 ![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/首页1.png)
 ![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/分享1.png)
-![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/导航侧滑1.png)
+![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/侧滑导航1.png)
 ![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/详情1.png)
 ![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/消息1.png)
 ![image](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/交易1.png)
