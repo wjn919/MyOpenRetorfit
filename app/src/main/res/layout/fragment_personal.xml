@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_page_bg"
+    >
+
+
+    <cn.com.argorse.common.view.VerticalSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_header_height"
+                    android:background="@color/font_red"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/personal_head_portrait"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_panding_short"
+                        android:text="@string/test_show"
+                        android:textColor="@color/font_whiter"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/font_whiter"
+                    android:layout_marginTop="@dimen/margin_panding"
+
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/personal_wait_pay"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:padding="@dimen/margin_panding"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/personal_wait_send"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:padding="@dimen/margin_panding"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/personal_wait_recieve"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:padding="@dimen/margin_panding"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/personal_wait_evaluate"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:padding="@dimen/margin_panding"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/personal_all"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:padding="@dimen/margin_panding"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+                <TextView
+                android:layout_marginTop="@dimen/margin_panding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/font_whiter"
+                android:text="@string/personal_shopping_bus"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="@dimen/margin_panding_short"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_panding"
+                />
+                <View
+                    style="@style/all_page_line"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_whiter"
+                    android:text="@string/personal_collect"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawablePadding="@dimen/margin_panding_short"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_panding"
+                    />
+                <View
+                    style="@style/all_page_line"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_whiter"
+                    android:text="@string/personal_shopping_address"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawablePadding="@dimen/margin_panding_short"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_panding"
+                    />
+
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_panding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_whiter"
+                    android:text="@string/personal_login_taobao"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawablePadding="@dimen/margin_panding_short"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_panding"
+                    />
+                <View
+                    style="@style/all_page_line"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_whiter"
+                    android:text="@string/personal_suggest"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawablePadding="@dimen/margin_panding_short"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_panding"
+                    />
+                <View
+                    style="@style/all_page_line"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_whiter"
+                    android:text="@string/personal_praise"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawablePadding="@dimen/margin_panding_short"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_panding"
+                    />
+                <View
+                    style="@style/all_page_line"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_whiter"
+                    android:text="@string/personal_soft_setting"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawablePadding="@dimen/margin_panding_short"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_panding"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </cn.com.argorse.common.view.VerticalSwipeRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_page_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_shopping_details_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_height"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_gray"
+        android:padding="@dimen/margin_panding"
+        android:text="优惠券已过期" />
+
+    <TextView
+        android:id="@+id/tv_shopping_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_whiter"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_panding"
+        android:text="润虎 台湾高山茶冻顶乌龙茶台湾茶叶 乌龙茶150克"
+        android:textSize="@dimen/font_default" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_whiter"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_panding"
+        android:text="￥158.00"
+        android:drawableLeft="@mipmap/star"
+        android:drawablePadding="@dimen/margin_panding"
+        android:textColor="@color/font_yellow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/font_whiter"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_panding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="领取优惠券" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品页下单" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用优惠券" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_panding"
+        android:background="@color/font_whiter"
+        android:padding="@dimen/margin_panding"
+        android:text="小编酷评"
+        android:drawableLeft="@mipmap/star"
+        android:drawablePadding="@dimen/margin_panding"
+        />
+
+    <View style="@style/all_page_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_whiter"
+        android:padding="@dimen/margin_panding"
+        android:text="茶汤清爽怡人，茶香清新，是地道台湾乌龙茶，可以预防蛀牙，美容养颜，改善皮肤过敏"
+        android:textColor="@color/font_red" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_panding"
+        android:background="@color/font_whiter"
+        android:padding="@dimen/margin_panding"
+        android:drawableLeft="@mipmap/star"
+        android:drawablePadding="@dimen/margin_panding"
+        android:text="推荐商品" />
+
+    <View style="@style/all_page_line" />
+</LinearLayout>

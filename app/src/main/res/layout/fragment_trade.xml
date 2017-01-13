@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/frame_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.com.argorse.common.view.VerticalSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_list_trade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:background="@color/all_page_bg"
+            android:scrollbars="none"
+            />
+
+    </cn.com.argorse.common.view.VerticalSwipeRefreshLayout>
+    <include layout="@layout/view_loading" />
+
+    <include layout="@layout/view_prompt" />
+</FrameLayout>

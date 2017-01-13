@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prompt_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/all_page_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/prompt_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/no_message_icon" />
+
+        <TextView
+            android:id="@+id/prompt_tv_tips"
+            style="@style/cc_input_box_title_tv"
+            android:layout_marginTop="@dimen/margin_panding"
+            android:text="@string/view_prompt_clickretry_text"
+            android:textColor="@color/font_gray" />
+
+        <Button
+            android:id="@+id/prompt_btn_refresh"
+            style="@style/btn_refresh"
+            android:layout_marginTop="@dimen/btn_prompt_margin_t"
+            android:visibility="gone"
+            android:text="@string/view_prompt_clickretry_btn_text" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

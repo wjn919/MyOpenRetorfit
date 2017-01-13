@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_title_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_header_h"
+        android:layout_below="@id/status"
+
+
+        >
+
+        <LinearLayout
+            android:id="@+id/page_left_ll"
+            android:layout_width="@dimen/back_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_panding"
+                android:background="@mipmap/return_button"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_title_tv"
+            android:layout_width="@dimen/app_header_text_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_largest"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/main_search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_panding"
+                android:layout_marginLeft="@dimen/margin_more"
+                android:layout_marginRight="@dimen/margin_more"
+                android:layout_marginTop="@dimen/margin_panding"
+                android:background="@drawable/corner_circle_shape_bg"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:id="@+id/main_search_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/app_title_search"
+                    android:textColor="@android:color/white"
+                    />
+                <EditText
+                    android:id="@+id/main_search_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="@string/app_title_search"
+                    android:textColor="@android:color/white"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_panding"
+            android:src="@mipmap/search_icon"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/iv_main_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_panding"
+            android:src="@mipmap/share"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

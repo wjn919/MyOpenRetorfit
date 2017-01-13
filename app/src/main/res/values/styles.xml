@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- 线 水平 -->
+    <style name="all_page_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@mipmap/all_page_list_line</item>
+    </style>
+    <!-- 线 垂直 -->
+    <style name="all_page_line_v">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@mipmap/all_page_list_line</item>
+    </style>
+
+    <style name="btn_refresh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/btn_refresh_panding_r_l</item>
+        <item name="android:paddingLeft">@dimen/btn_refresh_panding_r_l</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:background">@drawable/public_button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+    <!-- 输入框标题样式 common_allpage_input_box -->
+    <style name="cc_input_box_title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_panding_short</item>
+        <item name="android:paddingBottom">@dimen/margin_panding_short</item>
+        <item name="android:textSize">@dimen/font_default</item>
+        <item name="android:textColor">@color/all_et_lefttext</item>
+    </style>
+
+    <!-- 更多 > -->
+    <style name="all_page_more">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/margin_panding</item>
+        <item name="android:layout_marginLeft">@dimen/margin_panding</item>
+        <item name="android:background">@mipmap/public_more_icon</item>
+    </style>
+</resources>

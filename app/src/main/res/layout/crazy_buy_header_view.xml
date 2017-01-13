@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_height"
+        android:background="@mipmap/banner1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/font_whiter"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crazy_type"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crazy_open"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crazy_charge"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crazy_spread"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crazy_mission"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crazy_question"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            />
+
+    </LinearLayout>
+
+    <View
+       style="@style/all_page_line"
+
+        />
+
+    <cn.com.argorse.common.view.AutoAdjustRecylerView
+        android:id="@+id/id_recyclerview_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:scrollbars="none"
+        android:visibility="visible" />
+    <View
+        style="@style/all_page_line"
+        />
+
+
+</LinearLayout>

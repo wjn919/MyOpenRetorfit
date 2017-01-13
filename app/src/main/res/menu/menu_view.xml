@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Hello"/>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@mipmap/ic_launcher"
+            android:title="你好"/>
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@mipmap/ic_launcher"
+            android:title="How are you"/>
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@mipmap/ic_launcher"
+            android:title="怎么老是你"/>
+    </group>-->
+
+    <item android:title="语言">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_launcher"
+                android:title="Android" />
+            <item
+                android:icon="@mipmap/ic_launcher"
+                android:title="iOS" />
+            <item
+                android:icon="@mipmap/ic_launcher"
+                android:title="PC" />
+            <item
+                android:icon="@mipmap/ic_launcher"
+                android:title="web" />
+            <item
+                android:icon="@mipmap/ic_launcher"
+                android:title="other" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 字体颜色 -->
+    <color name="font_black">#333333</color>
+    <color name="font_blue">#03afe6</color>
+    <color name="font_red">#E4393C</color>
+    <color name="font_green">#21B100</color>
+    <color name="font_gray">#909090</color>
+    <color name="font_gary_light">#d1d1d1</color>
+    <color name="font_whiter">#ffffff</color>
+    <color name="font_yellow">#FF9600</color>
+    <color name="font_blue_light">#00aaee</color>
+
+    <!--通用的背景颜色-->
+    <color name="all_page_bg">#efeff4</color>
+    <color name="all_page_title_bg">#F5F4F3</color>
+    <color name="all_page_title_btn">#e7e7e7</color>
+    <!-- 所有页面输入框左边字段名文字颜色 -->
+    <color name="all_et_lefttext">#000000</color>
+    <!-- 所有页面输入框内提示文字颜色 -->
+    <color name="all_et_hinttext">#a4a6ad</color>
+    <!-- 输入短信验证码页面提示文字颜色 -->
+    <color name="all_sms_titletext">#696969</color>
+    <color name="all_tv_textColor">#ffffff</color>
+    <color name="all_list_bg">#FBFBFB</color>
+
+
+    <!-- 下拉刷新的颜色 -->
+    <color name="swipeLayout_scheme_1">#FF0000</color>
+    <color name="swipeLayout_scheme_2">#00FF00</color>
+    <color name="swipeLayout_scheme_3">#0000FF</color>
+    <color name="swipeLayout_scheme_4">#EEEE00</color>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

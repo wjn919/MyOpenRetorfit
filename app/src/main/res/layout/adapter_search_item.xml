@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_whiter"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_panding_short"
+            android:paddingLeft="@dimen/margin_panding"
+            android:paddingRight="@dimen/margin_panding"
+            android:paddingTop="@dimen/margin_panding_short">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/messgae_item_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/message_icon" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/messgae_item_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_panding_short"
+                    android:singleLine="true"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_default" />
+
+                <TextView
+                    android:id="@+id/messgae_item_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_panding_short"
+                    android:paddingTop="@dimen/margin_panding_fartshort"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/messgae_item_content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_panding_short"
+                    android:paddingTop="@dimen/margin_panding_fartshort"
+                    android:singleLine="true"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView style="@style/all_page_more" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        style="@style/all_page_line"
+        />
+</LinearLayout>

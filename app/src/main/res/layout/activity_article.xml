@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_page_bg"
+    android:orientation="vertical">
+
+
+    <cn.com.argorse.common.view.VerticalSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.com.argorse.common.view.WrapRecyclerView
+            android:id="@+id/rl_list_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/all_page_bg"
+            android:scrollbars="none" />
+    </cn.com.argorse.common.view.VerticalSwipeRefreshLayout>
+
+    <include layout="@layout/view_loading" />
+
+    <include layout="@layout/view_prompt" />
+
+
+</FrameLayout>

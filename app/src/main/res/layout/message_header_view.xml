@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_page_bg"
+    android:orientation="vertical">
+
+    <cn.com.argorse.common.view.MyGridView
+        android:id="@+id/gv_main_mainmodule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_whiter"
+        android:gravity="center"
+        android:numColumns="@string/grid_column"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/margin_panding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_panding"
+        android:background="@color/font_whiter"
+        >
+
+        <TextView
+            android:id="@+id/msg_tab_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            android:textColor="@color/font_red"
+            android:background="@mipmap/pm_quanbushangpin_erjileibiao_xuanzhong_xiahuaxian"
+            android:text="@string/today_new" />
+
+        <TextView
+            android:id="@+id/msg_tab_pop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            android:textColor="@color/font_gray"
+            android:background="@mipmap/pm_quanbushangpin_erjileibiao_weixuanzhong"
+            android:text="@string/hot_pop" />
+
+        <TextView
+            android:id="@+id/msg_tab_cheap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            android:textColor="@color/font_gray"
+            android:background="@mipmap/pm_quanbushangpin_erjileibiao_weixuanzhong"
+            android:text="@string/mast_cheap" />
+
+        <TextView
+            android:id="@+id/msg_tab_price_low"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            android:textColor="@color/font_gray"
+            android:background="@mipmap/pm_quanbushangpin_erjileibiao_weixuanzhong"
+            android:text="@string/coupon_cheap" />
+
+        <TextView
+            android:id="@+id/msg_tab_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            android:textColor="@color/font_gray"
+            android:background="@mipmap/pm_quanbushangpin_erjileibiao_weixuanzhong"
+            android:text="@string/crazy_buy" />
+    </LinearLayout>
+
+    <View style="@style/all_page_line" />
+</LinearLayout>
