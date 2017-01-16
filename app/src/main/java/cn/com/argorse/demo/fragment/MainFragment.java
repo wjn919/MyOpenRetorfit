@@ -21,11 +21,9 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.com.argorse.common.exception.ApiCode;
 import cn.com.argorse.common.http.HttpUtils;
 import cn.com.argorse.common.utils.CommonRecyclerAdapter;
 import cn.com.argorse.common.utils.AlertUtils;
-import cn.com.argorse.common.utils.JsonUtils;
 import cn.com.argorse.common.utils.RecyclerViewHolder;
 import cn.com.argorse.common.view.VerticalSwipeRefreshLayout;
 import cn.com.argorse.common.view.WrapRecyclerView;
@@ -123,7 +121,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
         mAdapter.setOnItemClickListener(this);
         mRecyclerView.addOnScrollListener(new LvOnScrollListener());
         initViewPager();
-        initViewPagerData();
+        //initViewPagerData(urlList);
         (((MainActivity) getActivity()).getHeaderView()).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -186,15 +184,15 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
         ll_vp.setVisibility(View.GONE);
     }
 
-    private void initViewPagerData() {
+    private void initViewPagerData(List<ResultsEntity> urlList) {
         //设置小圆点
-
         //小圆点的个数和图片个数一致
-        imagePointViews = new ImageView[2];
+        mPointGroup.removeAllViews();//避免重复
+        imagePointViews = new ImageView[urlList.size()];
         // 设置每个小圆点距离左边的间距
         LinearLayout.LayoutParams margin = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         margin.setMargins(10, 0, 0, 10);
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < urlList.size(); i++) {
             ImageView imageView = new ImageView(getActivity());
             // 设置每个小圆点的宽高
             imageView.setLayoutParams(new LinearLayout.LayoutParams(15, 15));
@@ -347,6 +345,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
         if (isFirst) {
             mRecyclerView.setAdapter(mAdapter);
         }
+        initViewPagerData(urlList);
         mViewPagerAdapter = new MainViewPagerAdapter(mActivity, urlList);
         mViewPager.setAdapter(mViewPagerAdapter);
         mViewPager.setOnPageChangeListener(paggeListener);

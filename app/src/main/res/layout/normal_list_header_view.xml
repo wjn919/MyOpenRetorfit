@@ -9,7 +9,7 @@
         android:id="@+id/iv_normal_list_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/banner1"
+        android:background="@mipmap/baicai"
         />
 
     <TextView

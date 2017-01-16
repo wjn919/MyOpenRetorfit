@@ -19,9 +19,9 @@
 
     <ImageView
         android:id="@+id/iv_search_list_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/btn_prompt_margin_t"
+        android:layout_height="@dimen/btn_prompt_margin_t"
+        android:src="@mipmap/search_delete"
         />
 
     </LinearLayout>

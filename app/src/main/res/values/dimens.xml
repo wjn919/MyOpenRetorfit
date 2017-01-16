@@ -42,7 +42,7 @@
     <dimen name="btn_prompt_margin_t">30dp</dimen>
     <dimen name="tab_height">38dp</dimen>
     <dimen name="view_pager_margin">6dp</dimen>
-    <dimen name="viewpager_height">130dp</dimen>
+    <dimen name="viewpager_height">180dp</dimen>
     <dimen name="navigation_height">23dp</dimen>
     <dimen name="back_width">50dp</dimen>
     <dimen name="delete_item_width">70dp</dimen>
@@ -50,7 +50,7 @@
     <dimen name="person_header_height">180dp</dimen>
     <dimen name="hos_item_image_width">40dp</dimen>
     <dimen name="hos_item_image_height">40dp</dimen>
-    <dimen name="layout_height">130dp</dimen>
+    <dimen name="layout_height">150dp</dimen>
     <dimen name="navigation_slide_width">100dp</dimen>
     <dimen name="navigation_slide_height">100dp</dimen>
     <dimen name="app_header_text_width">300dp</dimen>

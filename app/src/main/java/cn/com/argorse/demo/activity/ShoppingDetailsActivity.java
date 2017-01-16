@@ -675,7 +675,7 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
         ImageObject imageObject = new ImageObject();
 
         Bitmap bmp = BitmapFactory.decodeResource(getResources(),
-                R.mipmap.banner1);
+                R.mipmap.baicai);
         imageObject.setImageObject(bmp);
         return imageObject;
     }

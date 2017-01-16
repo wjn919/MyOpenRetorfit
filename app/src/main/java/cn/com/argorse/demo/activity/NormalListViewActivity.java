@@ -103,13 +103,13 @@ public class NormalListViewActivity extends BaseActivity {
         }else if(showType.equals("2")){//超值9.9
             mListLv.addHeaderView(mLvHeaderView);
             mLvHeaderView.setVisibility(View.VISIBLE);
-            headerImage.setBackground(getResources().getDrawable(R.mipmap.banner1));
+            headerImage.setBackground(getResources().getDrawable(R.mipmap.ninebaoyou));
             headerText.setText("超值9块9，劵后全场9块9包邮");
 
         }else if(showType.equals("3")){
             mListLv.addHeaderView(mLvHeaderView);
             mLvHeaderView.setVisibility(View.VISIBLE);
-            headerImage.setBackground(getResources().getDrawable(R.mipmap.banner2));
+            headerImage.setBackground(getResources().getDrawable(R.mipmap.baicai));
             headerText.setText("白菜券，精选6元以下好货，值得购买！");
 
         }

@@ -37,8 +37,8 @@
     <string name="main_taobao_sale">淘宝特卖</string>
     <string name="main_scare_buy">淘抢购</string>
     <string name="main_coupon">淘优惠券</string>
-    <string name="viewpager_height">286</string>
-    <string name="viewpager_width">750</string>
+    <string name="viewpager_height">611</string>
+    <string name="viewpager_width">611</string>
     <string name="no_message">暂无消息</string>
     <string name="tv_loading">引导页</string>
     <string name="test_show">测试文字</string>
@@ -77,4 +77,5 @@
     <string name="errcode_cancel">微信分享取消</string>
     <string name="errcode_unknown">微信分享失败</string>
     <string name="network_unavailable">网络不可用</string>
+    <string name="tv_updapte_num">今日已更新234款</string>
 </resources>
