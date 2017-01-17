@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.1"
     defaultConfig {
         applicationId "cn.com.argorse.demo"
-        minSdkVersion 14
+        minSdkVersion 18
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -61,7 +61,7 @@ dependencies {
     compile 'com.android.support:support-v4:25.0.1'
     //realm 数据库
     compile 'io.realm:realm-android:0.84.1'
-    compile files('libs/weiboSDKCore_3.1.4.jar')
     compile files('libs/libammsdk.jar')
     compile files('libs/open_sdk_r5778.jar')
+    compile project(path: ':weiboSDK')
 }

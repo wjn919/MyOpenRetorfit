@@ -12,6 +12,6 @@ import rx.Observable;
  */
 
 public interface testApi {
-    @GET("http://gank.io/api/data/福利/8/{num}")
+    @GET("data/福利/8/{num}")
     Observable<BaseEntity<List<ResultsEntity>>> getMessage(@Path("num") int num);
 }

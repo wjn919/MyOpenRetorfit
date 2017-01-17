@@ -25,6 +25,7 @@ public final class Constants {
 
     //微信
     public static final String APP_ID_WX ="wxb998e4a615cdbf81" ;
+    public static final String APP_SECRET_WX ="009b47521d4b816b96f0f6b28fa8a17b";
     public static final String APP_ID_QQ ="1105944680" ;
 
 
@@ -32,4 +33,9 @@ public final class Constants {
     public static final String DATA_PATH = BaseApplication.context().getCacheDir().getAbsolutePath() + File.separator + "data";
     public static final String NET_DATA_PATH = DATA_PATH + File.separator + "net_cache";
 
+    public static final String PARAM_ACCESS_TOKEN = "access_token";
+
+    public static final String PARAM_EXPIRES_IN ="expires_in" ;
+
+    public static final String PARAM_OPEN_ID = "openid";
 }

@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
 
     <application
         android:name="cn.com.argorse.demo.BaseApplication"
@@ -50,6 +50,8 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize"></activity>
 
+
+
         <activity
             android:name="cn.com.argorse.demo.wxapi.WXEntryActivity"
             android:exported="true"
@@ -75,6 +77,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>
+
 
 
 </manifest>

@@ -59,6 +59,29 @@ public class AlertUtils {
 		}
 		mProgDialog.show();
 	}
+
+	/**
+	 * 展示loading框
+	 */
+	public static void showLoadingDialog(Context context,String  title,String msg){
+		if (mProgDialog == null){
+			mProgDialog = new ProgressDialog(context);
+			mProgDialog.setTitle(title);
+			mProgDialog.setMessage(msg);
+			mProgDialog.setCancelable(false);
+			mProgDialog.setCanceledOnTouchOutside(false);
+			mProgDialog.setOnKeyListener(new OnKeyListener() {
+				@Override
+				public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+					if(keyCode== KeyEvent.KEYCODE_BACK){
+						return true;
+					}
+					return false;
+				}
+			});
+		}
+		mProgDialog.show();
+	}
 	/**
 	 * 销毁loading框
 	 */

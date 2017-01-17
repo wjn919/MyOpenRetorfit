@@ -214,7 +214,7 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
             beginRow = 0;// 开始条数
             rows = rowsDefault;// 加载条数
         }
-        testApi msgApi = HttpUtils.getInstance().create(testApi.class);
+        testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
         msgApi.getMessage(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -378,6 +378,8 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
             AlertUtils.showToast(this, "您还未安装微信");
             return;
         }
+        BaseApplication.isWxLogin = false;
+        BaseApplication.isWxShare = true;
         WXWebpageObject webpage = new WXWebpageObject();
         //分享网页类型
         webpage.webpageUrl = "http://www.argorse.com/";

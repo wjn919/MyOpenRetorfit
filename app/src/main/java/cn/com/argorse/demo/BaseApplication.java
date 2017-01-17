@@ -6,6 +6,8 @@ import android.content.Context;
 import android.text.TextUtils;
 
 
+import com.tencent.mm.sdk.openapi.IWXAPI;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -17,6 +19,8 @@ import io.realm.RealmConfiguration;
 public class BaseApplication extends Application {
 
 	private static Realm realm;
+	public static boolean isWxLogin;
+	public static boolean isWxShare;
 	//运用list来保存们每一个activity是关键
     private List<Activity> mActivities = new LinkedList<Activity>();
 	//*******环境切换***********************************

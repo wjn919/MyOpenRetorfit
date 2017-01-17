@@ -20,6 +20,7 @@ import cn.com.argorse.common.utils.RecyclerViewHolder;
 import cn.com.argorse.common.view.AutoAdjustRecylerView;
 import cn.com.argorse.common.view.VerticalSwipeRefreshLayout;
 import cn.com.argorse.demo.BaseActivity;
+import cn.com.argorse.demo.BaseApplication;
 import cn.com.argorse.demo.Entity.BaseObserver;
 import cn.com.argorse.demo.Entity.GoodsType;
 import cn.com.argorse.demo.Entity.ResultsEntity;
@@ -134,7 +135,7 @@ public class CrazyBuyActivity extends BaseActivity  {
             beginRow = mDataList.size();// 开始条数
             rows = rowsMore;// 加载条数
         }
-        testApi msgApi = HttpUtils.getInstance().create(testApi.class);
+        testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
         msgApi.getMessage(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

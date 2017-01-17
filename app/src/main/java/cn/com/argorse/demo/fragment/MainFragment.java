@@ -27,6 +27,7 @@ import cn.com.argorse.common.utils.AlertUtils;
 import cn.com.argorse.common.utils.RecyclerViewHolder;
 import cn.com.argorse.common.view.VerticalSwipeRefreshLayout;
 import cn.com.argorse.common.view.WrapRecyclerView;
+import cn.com.argorse.demo.BaseApplication;
 import cn.com.argorse.demo.BaseFragment;
 import cn.com.argorse.demo.Entity.BaseObserver;
 
@@ -150,6 +151,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
         crazybuy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 startActivity(CrazyBuyActivity.class);
             }
         });
@@ -212,7 +214,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
 
     private void initUrl() {
 
-        testApi viewPagerApi = HttpUtils.getInstance().create(testApi.class);
+        testApi viewPagerApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
         viewPagerApi.getMessage(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -265,7 +267,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
             beginRow = mDataList.size();// 开始条数
             rows = rowsMore;// 加载条数
         }
-        testApi hosApi = HttpUtils.getInstance().create(testApi.class);
+        testApi hosApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
         hosApi.getMessage(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

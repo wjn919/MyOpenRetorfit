@@ -23,6 +23,7 @@ import cn.com.argorse.common.utils.CommonRecyclerAdapter;
 import cn.com.argorse.common.utils.RecyclerViewHolder;
 import cn.com.argorse.common.view.VerticalSwipeRefreshLayout;
 import cn.com.argorse.common.view.WrapRecyclerView;
+import cn.com.argorse.demo.BaseApplication;
 import cn.com.argorse.demo.BaseFragment;
 import cn.com.argorse.demo.Entity.BaseObserver;
 import cn.com.argorse.demo.Entity.ResultsEntity;
@@ -133,7 +134,7 @@ public class ArticleFragment extends BaseFragment {
             rows = rowsMore;// 加载条数
         }
 
-        testApi hosApi = HttpUtils.getInstance().create(testApi.class);
+        testApi hosApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
         hosApi.getMessage(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

@@ -24,6 +24,7 @@ import cn.com.argorse.common.utils.ListViewHolder;
 import cn.com.argorse.common.view.MyGridView;
 import cn.com.argorse.common.view.VerticalSwipeRefreshLayout;
 import cn.com.argorse.demo.BaseActivity;
+import cn.com.argorse.demo.BaseApplication;
 import cn.com.argorse.demo.BaseFragment;
 import cn.com.argorse.demo.Entity.BaseObserver;
 import cn.com.argorse.demo.Entity.MainGridViewData;
@@ -180,7 +181,7 @@ public class MessageFragment extends BaseFragment implements View.OnClickListene
             rows = rowsMore;// 加载条数
         }
 
-        testApi msgApi = HttpUtils.getInstance().create(testApi.class);
+        testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
         msgApi.getMessage(1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

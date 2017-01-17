@@ -20,7 +20,7 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 public class HttpUtils {
     private static Retrofit mRetrofit;
     private static volatile HttpUtils httpUtils;
-    public HttpUtils() {
+    public HttpUtils(String baseUrl) {
 
 
 
@@ -28,7 +28,7 @@ public class HttpUtils {
         mRetrofit = new Retrofit.Builder()
                 .addConverterFactory(JsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .baseUrl(BaseApplication.Server_Url)
+                .baseUrl(baseUrl)
                 .client(ClientFactory.INSTANCE.getHttpClient()).build();
 
 
@@ -36,11 +36,11 @@ public class HttpUtils {
 
     }
 
-     public static HttpUtils getInstance() {
+     public static HttpUtils getInstance(String baseUrl) {
         if (httpUtils == null) {
             synchronized (HttpUtils.class) {
                 if (httpUtils == null) {
-                    httpUtils = new HttpUtils();
+                    httpUtils = new HttpUtils(baseUrl);
                     return httpUtils;
                 }
             }

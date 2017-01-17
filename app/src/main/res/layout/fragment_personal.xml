@@ -6,10 +6,10 @@
     >
 
 
-    <cn.com.argorse.common.view.VerticalSwipeRefreshLayout
+   <!-- <cn.com.argorse.common.view.VerticalSwipeRefreshLayout
         android:id="@+id/swipe_container"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent">-->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -21,6 +21,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/ll_login"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/person_header_height"
                     android:background="@color/font_red"
@@ -34,11 +35,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_panding_short"
-                        android:text="@string/test_show"
+                        android:text="@string/tv_to_login"
                         android:textColor="@color/font_whiter"
                         />
                 </LinearLayout>
@@ -57,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/personal_wait_pay"
-                        android:drawableTop="@mipmap/ic_launcher"
+                        android:drawableTop="@mipmap/ic_order_unpay"
                         android:padding="@dimen/margin_panding"
                         android:gravity="center"
                         />
@@ -67,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/personal_wait_send"
-                        android:drawableTop="@mipmap/ic_launcher"
+                        android:drawableTop="@mipmap/ic_order_unsend"
                         android:padding="@dimen/margin_panding"
                         android:gravity="center" />
 
@@ -76,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/personal_wait_recieve"
-                        android:drawableTop="@mipmap/ic_launcher"
+                        android:drawableTop="@mipmap/ic_order_unreceive"
                         android:padding="@dimen/margin_panding"
                         android:gravity="center"
                         />
@@ -85,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/personal_wait_evaluate"
-                        android:drawableTop="@mipmap/ic_launcher"
+                        android:drawableTop="@mipmap/ic_order_uncomment"
                         android:padding="@dimen/margin_panding"
                         android:gravity="center"
                         />
@@ -94,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/personal_all"
-                        android:drawableTop="@mipmap/ic_launcher"
+                        android:drawableTop="@mipmap/ic_order_all"
                         android:padding="@dimen/margin_panding"
                         android:gravity="center"
                         />
@@ -106,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/font_whiter"
                 android:text="@string/personal_shopping_bus"
-                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawableLeft="@mipmap/ic_mine_cart"
                 android:drawablePadding="@dimen/margin_panding_short"
                 android:gravity="center_vertical"
                 android:padding="@dimen/margin_panding"
@@ -118,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/font_whiter"
                     android:text="@string/personal_collect"
-                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawableLeft="@mipmap/ic_mine_favorite"
                     android:drawablePadding="@dimen/margin_panding_short"
                     android:gravity="center_vertical"
                     android:padding="@dimen/margin_panding"
@@ -130,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/font_whiter"
                     android:text="@string/personal_shopping_address"
-                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawableLeft="@mipmap/ic_mine_address"
                     android:drawablePadding="@dimen/margin_panding_short"
                     android:gravity="center_vertical"
                     android:padding="@dimen/margin_panding"
@@ -144,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/font_whiter"
                     android:text="@string/personal_login_taobao"
-                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawableLeft="@mipmap/ic_mine_taobao"
                     android:drawablePadding="@dimen/margin_panding_short"
                     android:gravity="center_vertical"
                     android:padding="@dimen/margin_panding"
@@ -156,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/font_whiter"
                     android:text="@string/personal_suggest"
-                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawableLeft="@mipmap/ic_mine_qq_group"
                     android:drawablePadding="@dimen/margin_panding_short"
                     android:gravity="center_vertical"
                     android:padding="@dimen/margin_panding"
@@ -169,7 +171,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/font_whiter"
                     android:text="@string/personal_praise"
-                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawableLeft="@mipmap/ic_mine_haoping"
                     android:drawablePadding="@dimen/margin_panding_short"
                     android:gravity="center_vertical"
                     android:padding="@dimen/margin_panding"
@@ -182,7 +184,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/font_whiter"
                     android:text="@string/personal_soft_setting"
-                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:drawableLeft="@mipmap/ic_mine_setting"
                     android:drawablePadding="@dimen/margin_panding_short"
                     android:gravity="center_vertical"
                     android:padding="@dimen/margin_panding"
@@ -191,7 +193,7 @@
 
             </LinearLayout>
         </ScrollView>
-    </cn.com.argorse.common.view.VerticalSwipeRefreshLayout>
-
+   <!-- </cn.com.argorse.common.view.VerticalSwipeRefreshLayout>
+-->
 
 </LinearLayout>

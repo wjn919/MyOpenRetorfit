@@ -25,7 +25,7 @@
     <string name="personal_collect">我的收藏</string>
     <string name="personal_shopping_address">我的地址</string>
     <string name="personal_login_taobao">登录淘宝</string>
-    <string name="personal_suggest">意见反馈</string>
+    <string name="personal_suggest">加入内购群</string>
     <string name="personal_praise">为我点赞</string>
     <string name="personal_soft_setting">软件设置</string>
     <string name="main_fragment">首页</string>
@@ -78,4 +78,11 @@
     <string name="errcode_unknown">微信分享失败</string>
     <string name="network_unavailable">网络不可用</string>
     <string name="tv_updapte_num">今日已更新234款</string>
+    <string name="tv_to_login">请登录</string>
+    <string name="login">登录</string>
+    <string name="socaial_login">社交号登录</string>
+    <string name="phone_register">手机注册</string>
+    <string name="reback_pass">找回密码</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_pass">请输入登录密码</string>
 </resources>
