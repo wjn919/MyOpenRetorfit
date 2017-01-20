@@ -290,6 +290,7 @@ public class NormalListViewActivity extends BaseActivity {
             holder.setText(R.id.messgae_item_title_tv, messageEntity.getWho())
                     .setText(R.id.messgae_item_time_tv, messageEntity.getCreatedAt())
                     .setText(R.id.messgae_item_content_tv, messageEntity.getDesc());
+            holder.setImage(R.id.messgae_item_icon,messageEntity.getUrl());
 
         }
 
