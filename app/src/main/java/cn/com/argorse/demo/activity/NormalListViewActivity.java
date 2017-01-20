@@ -131,7 +131,7 @@ public class NormalListViewActivity extends BaseActivity {
             rows = rowsMore;// 加载条数
         }
         testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        msgApi.getMessage(1)
+        msgApi.getMessage(3)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(this) {

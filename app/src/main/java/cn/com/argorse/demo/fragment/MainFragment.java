@@ -215,7 +215,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
     private void initUrl() {
 
         testApi viewPagerApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        viewPagerApi.getMessage(1)
+        viewPagerApi.getMessage(3)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(getContext()) {
@@ -268,7 +268,7 @@ public class MainFragment extends BaseFragment implements CommonRecyclerAdapter.
             rows = rowsMore;// 加载条数
         }
         testApi hosApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        hosApi.getMessage(1)
+        hosApi.getMessage(2)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(getActivity())

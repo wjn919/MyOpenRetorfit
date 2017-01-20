@@ -220,7 +220,7 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
             rows = rowsDefault;// 加载条数
         }
         testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        msgApi.getMessage(1)
+        msgApi.getMessage(2)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(this) {

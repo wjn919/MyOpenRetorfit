@@ -170,7 +170,7 @@ public class CardDetailsActivity extends BaseActivity{
 
        private void getData1() {
         testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        msgApi.getMessage(1)
+        msgApi.getMessage(2)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(this) {

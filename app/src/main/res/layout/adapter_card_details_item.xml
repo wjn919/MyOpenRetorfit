@@ -26,10 +26,12 @@
 
                 <ImageView
                     android:id="@+id/card_item_icon"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/margin_long"
+                    android:layout_height="@dimen/margin_long"
                     android:layout_gravity="center_vertical"
-                    android:src="@mipmap/message_icon" />
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    />
             </LinearLayout>
 
 

@@ -135,7 +135,7 @@ public class ArticleFragment extends BaseFragment {
         }
 
         testApi hosApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        hosApi.getMessage(1)
+        hosApi.getMessage(2)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(getActivity()) {

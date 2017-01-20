@@ -208,7 +208,7 @@ public class TradeRecordFragment extends BaseFragment implements View.OnClickLis
 
     private void initUrl() {
         testApi viewPagerApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        viewPagerApi.getMessage(1)
+        viewPagerApi.getMessage(2)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(getActivity()) {
@@ -266,7 +266,7 @@ public class TradeRecordFragment extends BaseFragment implements View.OnClickLis
         }
 
         testApi hosApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        hosApi.getMessage(1)
+        hosApi.getMessage(3)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(getActivity()) {

@@ -182,7 +182,7 @@ public class MessageFragment extends BaseFragment implements View.OnClickListene
         }
 
         testApi msgApi = HttpUtils.getInstance(BaseApplication.Server_Url).create(testApi.class);
-        msgApi.getMessage(1)
+        msgApi.getMessage(4)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<List<ResultsEntity>>(getActivity()) {
@@ -475,6 +475,7 @@ public class MessageFragment extends BaseFragment implements View.OnClickListene
                     .setText(R.id.messgae_item_time_tv, messageEntity.getCreatedAt())
                     .setText(R.id.messgae_item_content_tv, messageEntity.getDesc());
 
+            holder.setImage(R.id.messgae_item_icon,messageEntity.getUrl());
             final SwipeLayout sl = holder.getView(R.id.swipe_refresh_layout);
             final TextView delete = holder.getView(R.id.tv_delete);
             delete.setTag(position);
