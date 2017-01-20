@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/card_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_whiter"
+        android:text="@string/test_show"
+        android:drawableLeft="@mipmap/ic_title_mark"
+        android:padding="@dimen/margin_panding"
+        android:drawablePadding="@dimen/margin_panding"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/margin_panding"
+        />
+
+    <View
+       style="@style/all_page_line"/>
+</LinearLayout>

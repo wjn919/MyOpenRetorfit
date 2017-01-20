@@ -513,7 +513,7 @@ public class FormatStr {
 	 * @return
 	 */
 	public static String getTime(Date date){
-		SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");//设置日期格式
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 		return df.format(date);
 	}
 	/**

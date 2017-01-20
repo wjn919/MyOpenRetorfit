@@ -8,7 +8,8 @@
     <!-- 字体颜色 -->
     <color name="font_black">#333333</color>
     <color name="font_blue">#03afe6</color>
-    <color name="font_red">#E4393C</color>
+    <color name="font_red_dark">#DB4848</color>
+    <color name="font_red">#FD5353</color>
     <color name="font_green">#21B100</color>
     <color name="font_gray">#909090</color>
     <color name="font_gary_light">#d1d1d1</color>

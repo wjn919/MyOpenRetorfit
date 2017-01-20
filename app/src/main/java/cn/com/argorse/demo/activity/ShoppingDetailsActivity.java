@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -107,6 +108,7 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
     private IWXAPI api;
     private Tencent mTencent;
     private IUiListener myListener;
+    private TextView mLeftDay;
 
 
     @Override
@@ -186,6 +188,7 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
         mHeaderTv.setText(R.string.message_details);
         mHeaderShareIv.setVisibility(View.VISIBLE);
         mHeaderShareIv.setOnClickListener(this);
+        handler.postDelayed(runnable, 1000);
 
 
     }
@@ -197,11 +200,13 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
         ImageLoaderUtil.load(this, imageUrl, iv);
         TextView shopName = (TextView) mLvHeaderView.findViewById(R.id.tv_shopping_details_name);
 
-        ImageSpan span = new ImageSpan(this, R.mipmap.star);
+        ImageSpan span = new ImageSpan(this, R.mipmap.ic_goods_tmall);
         SpannableString spanStr = new SpannableString("   ");
         spanStr.setSpan(span, 0, spanStr.length() - 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
         shopName.setText(spanStr);
         shopName.append("润虎 台湾高山茶冻顶乌龙茶台湾茶叶 乌龙茶150克");
+
+        mLeftDay = (TextView)mLvHeaderView.findViewById(R.id.tv_left_day);
     }
 
 
@@ -243,7 +248,8 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
                         if (loadType == LOAD_REFRESH) {
                             mDataList.clear();// 刷新
                         }
-                        mDataList.addAll(response);
+                        mDataList.add(response.get(0));
+                        mDataList.add(response.get(1));
                         if (loadType == LOAD_REFRESH)
                             mListLv.setSelection(0);// 切换收到送出后滑动到顶部
 
@@ -279,7 +285,58 @@ public class ShoppingDetailsActivity extends BaseActivity implements IWeiboHandl
         }
 
     }
+    Handler handler = new Handler();
+    private long time = 100000;
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            time--;
+            String formatLongToTimeStr = formatLongToTimeStr(time);
+            mLeftDay.setText(formatLongToTimeStr);
+           /* String[] split = formatLongToTimeStr.split("：");
+            for (int i = 0; i < split.length; i++) {
+                if(i==0){
+                    tvtime1.setText(split[0]+"小时");
+                }
+                if(i==1){
+                    tvtime2.setText(split[1]+"分钟");
+                }
+                if(i==2){
+                    tvtime3.setText(split[2]+"秒");
+                }
 
+            }*/
+            if(time>0){
+                handler.postDelayed(this, 1000);
+            }
+        }
+    };
+
+    public  String formatLongToTimeStr(Long l) {
+        int day = 0;
+        int hour = 0;
+        int minute = 0;
+        int second = 0;
+        second = l.intValue() ;
+        if (second > 60) {
+            minute = second / 60;         //取整
+            second = second % 60;//取余
+
+        }
+
+        if (minute > 60) {
+            hour = minute / 60;
+            minute = minute % 60;
+
+        }
+        if(hour>24){
+            day = hour / 24;
+            hour = hour%24;
+        }
+        String strtime = "剩下"+day+"天"+hour+":"+minute+":"+second;
+        return strtime;
+
+    }
     private void showPopupWindow() {
         final View contentView = LayoutInflater.from(this).inflate(R.layout.share_pop_layout, null);
         gridView = (GridView) contentView.findViewById(R.id.gv_share);

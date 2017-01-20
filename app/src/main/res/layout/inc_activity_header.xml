@@ -3,7 +3,7 @@
     android:id="@+id/main_title_rl"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorAccent">
+    android:background="@color/font_red">
 
     <TextView
         android:id="@+id/status"
@@ -87,10 +87,12 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:hint="@string/app_title_search"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/font_whiter"
+                    android:textColorHint="@color/font_whiter"
                     android:background="@null"
                     android:visibility="gone"
                     android:singleLine="true"
+                    android:textSize="@dimen/font_default"
                     />
 
             </RelativeLayout>

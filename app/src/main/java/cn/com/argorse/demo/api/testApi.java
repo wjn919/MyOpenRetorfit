@@ -14,4 +14,7 @@ import rx.Observable;
 public interface testApi {
     @GET("data/福利/8/{num}")
     Observable<BaseEntity<List<ResultsEntity>>> getMessage(@Path("num") int num);
+
+    @GET("data/福利/5/{num}")
+    Observable<BaseEntity<List<ResultsEntity>>> getData(@Path("num") int num);
 }

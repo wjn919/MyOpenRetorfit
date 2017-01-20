@@ -35,6 +35,7 @@
         <activity android:name="cn.com.argorse.demo.activity.NormalListViewActivity" />
         <activity android:name="cn.com.argorse.demo.activity.InndianaActivity" />
         <activity android:name="cn.com.argorse.demo.activity.CrazyBuyActivity" />
+        <activity android:name="cn.com.argorse.demo.activity.CardDetailsActivity" />
         <activity
             android:name="cn.com.argorse.demo.activity.ShoppingDetailsActivity"
             android:configChanges="keyboardHidden|orientation"

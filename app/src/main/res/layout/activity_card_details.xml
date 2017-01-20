@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.com.argorse.common.view.VerticalSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_list_card_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/all_page_bg"
+            android:divider="@null" />
+
+    </cn.com.argorse.common.view.VerticalSwipeRefreshLayout>
+
+    <include layout="@layout/view_loading" />
+
+    <include layout="@layout/view_prompt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+
+        >
+
+        <View style="@style/all_page_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/font_whiter"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_panding_short">
+
+            <EditText
+                android:id="@+id/et_card_details_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corner_shape_bg"
+                android:hint="@string/card_details_comment"
+                android:padding="@dimen/margin_panding_short" />
+
+            <TextView
+                android:id="@+id/tv_card_details_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_panding"
+                android:layout_marginRight="@dimen/margin_panding"
+                android:text="确定" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

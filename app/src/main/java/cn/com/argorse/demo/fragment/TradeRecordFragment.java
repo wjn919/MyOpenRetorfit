@@ -35,6 +35,7 @@ import cn.com.argorse.demo.Entity.BaseObserver;
 import cn.com.argorse.demo.Entity.ImageEntity;
 import cn.com.argorse.demo.Entity.ResultsEntity;
 import cn.com.argorse.demo.R;
+import cn.com.argorse.demo.activity.CardDetailsActivity;
 import cn.com.argorse.demo.adapter.MainViewPagerAdapter;
 import cn.com.argorse.demo.api.testApi;
 import rx.android.schedulers.AndroidSchedulers;
@@ -120,7 +121,6 @@ public class TradeRecordFragment extends BaseFragment implements View.OnClickLis
         });
 
         initViewPager();
-        initViewPagerData();
         initRecyclerView();
 
 
@@ -154,7 +154,8 @@ public class TradeRecordFragment extends BaseFragment implements View.OnClickLis
         mImageAdapter.setOnItemClickListener(new CommonRecyclerAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View itemView, int pos) {
-                AlertUtils.showToast(mActivity,pos+"");
+                //AlertUtils.showToast(mActivity,pos+"");
+                startActivity(CardDetailsActivity.class);
             }
         });
 
@@ -173,15 +174,15 @@ public class TradeRecordFragment extends BaseFragment implements View.OnClickLis
 
     }
 
-    private void initViewPagerData() {
+    private void initViewPagerData(List<ResultsEntity> urlList) {
         //设置小圆点
-
+        mPointGroup.removeAllViews();//避免重复
         //小圆点的个数和图片个数一致
-        imagePointViews = new ImageView[2];
+        imagePointViews = new ImageView[urlList.size()];
         // 设置每个小圆点距离左边的间距
         LinearLayout.LayoutParams margin = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         margin.setMargins(10, 0, 0, 10);
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < urlList.size(); i++) {
             ImageView imageView = new ImageView(getActivity());
             // 设置每个小圆点的宽高
             imageView.setLayoutParams(new LinearLayout.LayoutParams(15, 15));
@@ -365,6 +366,7 @@ public class TradeRecordFragment extends BaseFragment implements View.OnClickLis
         if (isFirst) {
             mListLv.setAdapter(mAdapter);
         }
+        initViewPagerData(urlList);
         mViewPagerAdapter = new MainViewPagerAdapter(mActivity, urlList);
         mViewPager.setAdapter(mViewPagerAdapter);
         mViewPager.setOnPageChangeListener(paggeListener);

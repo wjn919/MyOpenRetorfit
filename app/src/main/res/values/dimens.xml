@@ -54,5 +54,6 @@
     <dimen name="navigation_slide_width">100dp</dimen>
     <dimen name="navigation_slide_height">100dp</dimen>
     <dimen name="app_header_text_width">300dp</dimen>
+    <dimen name="image_width">280dp</dimen>
     <dimen name="normal_list_header_iv">150dp</dimen>
 </resources>

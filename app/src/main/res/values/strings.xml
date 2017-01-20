@@ -85,4 +85,26 @@
     <string name="reback_pass">找回密码</string>
     <string name="input_phone">请输入手机号</string>
     <string name="input_pass">请输入登录密码</string>
+    <string name="getSale">领取优惠券</string>
+    <string name="goodsBuy">商品页下单</string>
+    <string name="userSale">使用优惠券</string>
+    <string name="salemoney">￥158.00</string>
+    <string name="on_sale_price">在售价 ￥198</string>
+    <string name="details">茶汤清爽怡人，茶香清新，是地道台湾乌龙茶，可以预防蛀牙，美容养颜，改善皮肤过敏</string>
+    <string name="explain">单笔满3.00元可用，有效期至2017.02.28</string>
+    <string name="sale_price">￥1.00</string>
+    <string name="cheap_price">省25%</string>
+    <string name="left_day">剩余42天 13:21:26</string>
+    <string name="have_get_coupon">已领498889张</string>
+    <string name="goods_show">润虎 台湾高山茶冻顶乌龙茶台湾茶叶 乌龙茶150克</string>
+    <string name="editor_comment">小编酷评</string>
+    <string name="cheap_explain">优惠说明</string>
+    <string name="goods_recommond">推荐商品</string>
+    <string name="get_one_yuan">领1元</string>
+    <string name="buy_now">立即购买</string>
+    <string name="card_details">帖子详情</string>
+    <string name="card_details_name">路边的野花不要采</string>
+    <string name="card_details_date">2017-09-19 12:22:13</string>
+    <string name="card_details_explain">全部大件衣服，精美礼盒装，送礼更有面子，舒适纯棉，高端大气，无化残留物质，送出品，送出格调。</string>
+    <string name="card_details_comment">评论一下吧</string>
 </resources>

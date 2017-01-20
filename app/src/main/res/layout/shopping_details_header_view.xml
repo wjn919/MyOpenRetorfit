@@ -8,15 +8,52 @@
     <ImageView
         android:id="@+id/iv_shopping_details_image"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/viewpager_height"
+        android:layout_height="@dimen/image_width"
         android:scaleType="fitXY" />
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/font_gray"
-        android:padding="@dimen/margin_panding"
-        android:text="优惠券已过期" />
+        android:layout_height="@dimen/margin_long"
+        android:layout_gravity="center"
+        android:background="@color/font_red"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_details_sale_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_panding_short"
+            android:text="@string/sale_price"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/tv_details_sale_cheap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_details_sale_price"
+            android:gravity="center"
+            android:padding="@dimen/margin_panding_short"
+            android:text="@string/cheap_price" />
+
+        <TextView
+            android:id="@+id/tv_left_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_panding_short"
+            android:text="@string/left_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/have_get_coupon"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_details_sale_cheap"
+            android:id="@+id/textView3" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/tv_shopping_details_name"
@@ -25,19 +62,35 @@
         android:background="@color/font_whiter"
         android:gravity="center_vertical"
         android:padding="@dimen/margin_panding"
-        android:text="润虎 台湾高山茶冻顶乌龙茶台湾茶叶 乌龙茶150克"
+        android:text="@string/goods_show"
         android:textSize="@dimen/font_default" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/font_whiter"
-        android:gravity="center_vertical"
-        android:paddingLeft="@dimen/margin_panding"
-        android:text="￥158.00"
-        android:drawableLeft="@mipmap/star"
-        android:drawablePadding="@dimen/margin_panding"
-        android:textColor="@color/font_yellow" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/font_whiter"
+            android:drawableLeft="@mipmap/ic_couponed_price"
+            android:drawablePadding="@dimen/margin_panding"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_panding"
+            android:text="@string/salemoney"
+            android:textColor="@color/font_yellow" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_panding"
+            android:background="@color/font_whiter"
+            android:gravity="center_vertical"
+            android:text="@string/on_sale_price" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,14 +111,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/star"
-                />
+                android:src="@mipmap/ic_step_1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_panding_short"
                 android:gravity="center"
-                android:text="领取优惠券" />
+                android:text="@string/getSale" />
 
         </LinearLayout>
 
@@ -81,12 +134,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/star" />
+                android:src="@mipmap/ic_step_2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商品页下单" />
+                android:layout_marginLeft="@dimen/margin_panding_short"
+                android:text="@string/goodsBuy" />
 
         </LinearLayout>
 
@@ -100,12 +154,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/star" />
+                android:src="@mipmap/ic_step_3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="使用优惠券" />
+                android:layout_marginLeft="@dimen/margin_panding_short"
+                android:text="@string/userSale" />
 
         </LinearLayout>
     </LinearLayout>
@@ -115,11 +170,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_panding"
         android:background="@color/font_whiter"
-        android:padding="@dimen/margin_panding"
-        android:text="小编酷评"
-        android:drawableLeft="@mipmap/star"
+        android:drawableLeft="@mipmap/ic_title_mark"
         android:drawablePadding="@dimen/margin_panding"
-        />
+        android:padding="@dimen/margin_panding"
+        android:text="@string/editor_comment" />
 
     <View style="@style/all_page_line" />
 
@@ -128,18 +182,38 @@
         android:layout_height="wrap_content"
         android:background="@color/font_whiter"
         android:padding="@dimen/margin_panding"
-        android:text="茶汤清爽怡人，茶香清新，是地道台湾乌龙茶，可以预防蛀牙，美容养颜，改善皮肤过敏"
+        android:text="@string/details"
         android:textColor="@color/font_red" />
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_panding"
         android:background="@color/font_whiter"
-        android:padding="@dimen/margin_panding"
-        android:drawableLeft="@mipmap/star"
+        android:drawableLeft="@mipmap/ic_title_mark"
         android:drawablePadding="@dimen/margin_panding"
-        android:text="推荐商品" />
+        android:padding="@dimen/margin_panding"
+        android:text="@string/cheap_explain" />
+
+    <View style="@style/all_page_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_whiter"
+        android:padding="@dimen/margin_panding"
+        android:text="@string/explain" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_panding"
+        android:background="@color/font_whiter"
+        android:drawableLeft="@mipmap/ic_title_mark"
+        android:drawablePadding="@dimen/margin_panding"
+        android:padding="@dimen/margin_panding"
+        android:text="@string/goods_recommond" />
 
     <View style="@style/all_page_line" />
 </LinearLayout>

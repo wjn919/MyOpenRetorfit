@@ -106,7 +106,7 @@ public class SearchResultActivity extends BaseActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 AlertUtils.showToast(mActivity, i + "");
                 Bundle bundle = new Bundle();
-                bundle.putString("imageUrl", "images/home/BNANER2.png");
+                bundle.putString("imageUrl", "http://ww3.sinaimg.cn/large/610dc034gw1fbsfgssfrwj20u011h48y.jpg");
                 startActivity(ShoppingDetailsActivity.class, bundle, REQUEST_ACTIVITY);
             }
         });
