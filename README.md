@@ -20,7 +20,7 @@
    - 这个简单的小例子基本满足了基础开发，有需要的大家可以下载！
 
 ###APK下载
-   - [apk 下载](https://github.com/wjn919/MyOpenRetorfit/blob/master/app/screenshots/RetrofitDemo.apk)
+   - [apk 下载](https://github.com/wjn919/MyOpenRetorfit/raw/master/app/screenshots/RetrofitDemo.apk)
 
 ###下载地址
    - [干货集中营（GanK）](http://fir.im/9qkj)
